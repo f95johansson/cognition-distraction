@@ -63,7 +63,7 @@ public class FileChooserTest extends JFrame {
                 }
             }
             if (rVal == JFileChooser.CANCEL_OPTION) {
-                filename.setText("You pressed cancel");
+                filename.setText("");
                 dir.setText("");
             }
         }

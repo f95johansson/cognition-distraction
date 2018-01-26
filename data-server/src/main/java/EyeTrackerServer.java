@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Optional;
 
 import static spark.Spark.*;
@@ -12,7 +13,7 @@ public class EyeTrackerServer {
 
     public static void main(String[] args) {
         MainWindow window = MainWindow.getInstance((selectedFile) -> {
-            Optional<EyeTrackerData> data = FileHelper.getFile(selectedFile);
+            Optional<List<EyeTrackerData>> data = FileHelper.getFile(selectedFile);
 
             API api = new API(data.get());
             get("/eyetracker", api::serveData);

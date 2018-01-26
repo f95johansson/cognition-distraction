@@ -5,6 +5,8 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -21,10 +23,11 @@ public class FileHelper {
         return true;
     }
 
-    public static Optional<EyeTrackerData> getFile(File selectedFile) {
+    public static Optional<List<EyeTrackerData>> getFile(File selectedFile) {
         Gson parser = new Gson();
         try {
-            return Optional.of(parser.fromJson(new FileReader(selectedFile), EyeTrackerData.class));
+            EyeTrackerData[] d = parser.fromJson(new FileReader(selectedFile), EyeTrackerData[].class);
+            return Optional.of(Arrays.asList(d));
 
         } catch (IOException e) {
             return Optional.empty();

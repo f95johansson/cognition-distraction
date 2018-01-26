@@ -1,16 +1,20 @@
 import com.google.gson.Gson;
 import spark.Request;
-import spark.Response; /**
+import spark.Response;
+
+import java.util.List;
+
+/**
  * Author: Linus Lagerhjelm
  * File: API
  * Created: 2018-01-26
  * Description:
  */
 public class API {
-    EyeTrackerData data;
+    List<EyeTrackerData> data;
     Gson parser = new Gson();
 
-    public API(EyeTrackerData data) {
+    public API(List<EyeTrackerData> data) {
         this.data = data;
     }
 
