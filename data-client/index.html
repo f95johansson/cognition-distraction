@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="libs/heatmap.js"></script>
+    <style>
+      body {
+        background: #F4E6C1;
+        font-family: Roboto;
+      }
+
+      .content {
+        position: relative;
+        top: 40px;
+        width: 600px;
+        margin: auto;
+      }
+
+      .bowie {
+        width: 300px;
+        position: absolute;
+        top: 80px;
+        left: 10px;
+      }
+
+      .trippy {
+        width: 300px;
+        position: absolute;
+        right: 10px;
+        top: 80px;
+      }
+
+      .heatmap-container {
+        opacity: .5;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      .heatmap {
+        width: 100%;
+        height: 100%;
+      }
+
+      .gone {
+        display: none;
+      }
+
+      .button {
+        padding: 10px;
+        background: #0F7868;
+        color: white;
+        border-radius: 3px;
+        margin: 10px;
+      }
+
+      .before {
+        position: absolute;
+        left: 0;
+        right: 0; 
+      }
+
+      
+    </style>
+  </head>
+  <body>
+
+    <div class="test gone">
+      <p class="content">
+Solsystemet är det vardagliga namnet på vårt planetsystem där bland annat solen, jorden och månen ingår. Det består av solen och de himlakroppar som den binder till sig genom sin gravitation och har sitt ursprung i en gravitationell kollaps av ett gigantiskt gas- och stoftmoln för 4,5 miljarder år sedan.
+
+Runt solen kretsar en rad objekt i en nästan rund skiva i ekliptikan. Med undantag från solen finns merparten av solsystemets massa i de åtta planeterna, vars omloppsbanor är nästan cirkulära. De fyra mindre inre planeterna är Merkurius, Venus, jorden och Mars, vilka kallas stenplaneterna och som mest består av sten och metall. De fyra yttre planeterna är Jupiter, Saturnus, Uranus och Neptunus som kallas gasjättarna och som mestadels består av väte och helium och är mycket tyngre och större än stenplaneterna.
+
+Det finns två områden med mindre kroppar: asteroidbältet, som ligger mellan Mars och Jupiter, består av mindre kroppar som har vissa likheter med stenplaneterna då de till största delen består av sten och metall; Kuiperbältet, som ligger bortom Neptunus omloppsbana, består huvudsakligen av fruset vatten, ammoniak och metan. Inom dessa bälten finns det fem speciella objekt: Ceres, Pluto, Haumea, Makemake och Eris som betecknas dvärgplaneter, då de anses vara tillräckligt stora för ha blivit runda som en konsekvens av sin egen gravitation. På ett avstånd av 0,8–1,6 ljusår från solen antar man att det finns vad man kallar Oorts kometmoln som tros vara ursprunget till de långperiodiska kometerna.
+
+I solsystemet finns det grupper av mindre kroppar såsom kometer, centaurer och damokloider, interplanetärt stoft som färdas mellan dessa områden, medan solvinden, ett flöde av plasma från solen, skapar en bubbla i det interplanetära mediet som kallas heliosfären. Detta sträcker sig ut till mitten av det område som kallas scattered disc, ett område i anslutning till Kuiperbältet.
+
+Sex av planeterna och fyra av dvärgplaneterna har naturliga satelliter eller månar i omloppsbana. Var och en av de fyra yttre planeterna har en planetarisk ring av damm och andra partiklar.
+      </p>
+
+      <img class="ad bowie" src="https://media.giphy.com/media/SM32alLW9WEYo/giphy.gif">
+      <img class="ad trippy" src="https://media.giphy.com/media/wcgcRnkePIUPS/giphy.gif">
+    </div>
+
+
+
+    <div class="heatmap-container">
+      <div class="heatmap"></div>
+    </div>
+
+    <div class="before">
+      <span id="start" class="button">Starta</span>
+    </div>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
