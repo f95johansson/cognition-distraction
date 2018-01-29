@@ -1,0 +1,12 @@
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Release\eyetracker.exe.config
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Release\Tobii.EyeX.Client.dll
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Release\eyetracker.exe
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Release\eyetracker.pdb
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Release\Newtonsoft.Json.dll
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Release\Tobii.Interaction.Model.dll
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Release\Tobii.Interaction.Net.dll
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Release\uhttpsharp.dll
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Release\Newtonsoft.Json.xml
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Release\uhttpsharp.pdb
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\obj\Release\eyetracker.exe
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\obj\Release\eyetracker.pdb
