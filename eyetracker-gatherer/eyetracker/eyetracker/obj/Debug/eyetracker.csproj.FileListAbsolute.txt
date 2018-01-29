@@ -1,0 +1,13 @@
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Debug\eyetracker.exe.config
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\obj\Debug\eyetracker.csprojResolveAssemblyReference.cache
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Debug\Tobii.EyeX.Client.dll
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Debug\eyetracker.exe
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Debug\eyetracker.pdb
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Debug\Tobii.Interaction.Model.dll
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Debug\Tobii.Interaction.Net.dll
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\obj\Debug\eyetracker.exe
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\obj\Debug\eyetracker.pdb
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Debug\Newtonsoft.Json.dll
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Debug\uhttpsharp.dll
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Debug\Newtonsoft.Json.xml
+c:\users\hampus\documents\visual studio 2015\Projects\eyetracker\eyetracker\bin\Debug\uhttpsharp.pdb
