@@ -15,17 +15,19 @@
       }
 
       .bowie {
-        width: 300px;
+        width: 170px;
         position: absolute;
-        top: 80px;
-        left: 10px;
+        top: 40px;
+        left: 20px;
+        transition: opacity 1s;
       }
 
       .trippy {
-        width: 300px;
+        width: 200px;
         position: absolute;
-        right: 10px;
+        right: 20px;
         top: 80px;
+        transition: opacity 1s;
       }
 
       .heatmap-container {
@@ -85,8 +87,10 @@ I solsystemet finns det grupper av mindre kroppar såsom kometer, centaurer och 
 Sex av planeterna och fyra av dvärgplaneterna har naturliga satelliter eller månar i omloppsbana. Var och en av de fyra yttre planeterna har en planetarisk ring av damm och andra partiklar.
       </p>
 
-      <img class="ad bowie" src="https://media.giphy.com/media/SM32alLW9WEYo/giphy.gif">
-      <img class="ad trippy" src="https://media.giphy.com/media/wcgcRnkePIUPS/giphy.gif">
+      <img id="blocket" class="ad bowie" src="blocket_bil_reklam.gif">
+      <img id="samsung" class="ad bowie" src="telia_samsung_reklam.gif" style="opacity: 0">
+      <img id="hygglo" class="ad trippy" src="hygglo_reklam.gif">
+      <img id="prisjakt" class="ad trippy" src="prisjakt_reklam.png" style="opacity: 0">
 
       <div id="stop" class="button">
         Stop
@@ -94,7 +98,9 @@ Sex av planeterna och fyra av dvärgplaneterna har naturliga satelliter eller m�
     </div>
 
     <div class="before">
-      <span id="start" class="button">Starta</span>
+      <span id="start" class="button">Starta 1</span>
+      <br>
+      <span id="startWithDistraction" class="button">Starta 2</span>
     </div>
 
     <script src="scripts/main.js"></script>
