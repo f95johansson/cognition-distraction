@@ -19,6 +19,8 @@ public class API {
     }
 
     public Object serveData(Request request, Response response) {
+        response.header("Access-Control-Allow-Origin", "*");
+        response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
         return parser.toJson(data);
     }
 }
