@@ -2,9 +2,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 
 import javax.swing.*;
 
@@ -17,6 +14,7 @@ public class FileChooserTest extends JFrame {
     private JTextField filename = new JTextField(), dir = new JTextField();
     private JLabel info = new JLabel("Press open to select data file");
     private JLabel error = new JLabel("Could not open file");
+    private JLabel success = new JLabel();
 
     private JButton open = new JButton("Open");
     private JButton start = new JButton("Start");
@@ -43,6 +41,7 @@ public class FileChooserTest extends JFrame {
         p.add(dir);
         error.setVisible(false);
         error.setForeground(Color.RED);
+        success.setVisible(false);
         p.add(error);
         cp.add(p, BorderLayout.NORTH);
     }
@@ -72,12 +71,8 @@ public class FileChooserTest extends JFrame {
     class SaveL implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             startInvoker.invoke(selectedFile);
-            if (Desktop.isDesktopSupported()) {
-                try {
-                    Desktop.getDesktop().browse(new URI("http://www.google.com"));
-
-                } catch (URISyntaxException | IOException ignore) {/* Ignore */}
-            }
+            success.setVisible(true);
+            success.setText("Running!");
         }
     }
 }
