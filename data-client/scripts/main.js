@@ -33,6 +33,17 @@ document.querySelector('#stop').onclick = function(e) {
 
   document.querySelector('.test').classList.add('gone');
   document.querySelector('.before').classList.remove('gone');
+  document.querySelector('.planet').classList.remove('gone');
+  document.querySelector('.tal').classList.add('gone');
+  document.querySelector('#next').classList.remove('gone');
+  document.querySelector('#stop').classList.add('gone');
+};
+
+document.querySelector('#next').onclick = function(e) {
+  document.querySelector('#stop').classList.remove('gone');
+  document.querySelector('.planet').classList.add('gone');
+  document.querySelector('.tal').classList.remove('gone');
+  document.querySelector('#next').classList.add('gone');
 };
 
 
