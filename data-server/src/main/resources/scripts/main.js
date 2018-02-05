@@ -1,46 +1,44 @@
 function loadHeatMap(data) {
   clearHeatMap();
-  for (var i = data.length - 1; i >= 0; i--) {
+  for (var i = 0; i < data.length; i++) {
     var position = data[i];
-    heatmapInstance.addData({
-      x: position.x,
-      y: position.y,
-      value: 2
-    });
+    if (position != undefined) {
+      heatmapInstance.addData({
+        x: position.x,
+        y: position.y,
+        value: 1
+      });
+    }
   }
 }
 
 function clearHeatMap() {
   heatmapInstance.setData({
-    max: 1000,
+    max: 1,
     min: 0,
-    data: []
+    data: [{x: -50, y: -50, value: 1}]
   });
 }
 
 
 var heatmapInstance = h337.create({
   container: document.querySelector('.heatmap'),
-  radius: 50  
+  radius: 30  
 });
 
 var heatmap = document.querySelector('.heatmap');
 var userSelection = document.getElementById("user-selection");
 var selected = 0;
-var allData = []; //JSON.parse(d);
+var allData = [];
 
 
 for (var i = 0; i < allData.length; i++) {
-    var userData = allData[i];
-    var option = document.createElement("option");
-    option.text = userData.id;
-    option.value = i;
-    userSelection.add(option);
-  }
-  userSelection.addEventListener("change", function(e) {
-    selected = e.target.value;
-    loadHeatMap(allData[selected].data);
-  });
+  var userData = allData[i];
+  var option = document.createElement("option");
+  option.text = userData.id;
+  option.value = i;
+  userSelection.add(option);
+}
 
 
 fetch('http://localhost:4567/eyetracker')
@@ -55,8 +53,11 @@ fetch('http://localhost:4567/eyetracker')
       option.value = i;
       userSelection.add(option);
     }
+    loadHeatMap(allData[selected].data);
+
     userSelection.addEventListener("change", function(e) {
       selected = e.target.value;
+      console.log(selected);
       loadHeatMap(allData[selected].data);
     });
   }).catch(function(err) {console.log(err);});

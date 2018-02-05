@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="libs/heatmap.js"></script>
     <style>
       body {
-        background: #F4E6C1;
+        background: #F9EBC5;
         font-family: Roboto;
       }
 
@@ -16,17 +17,23 @@
       }
 
       .bowie {
-        width: 300px;
+        width: 170px;
         position: absolute;
-        top: 80px;
-        left: 10px;
+        top: 40px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-left: -438px;
+        transition: opacity 1s;
       }
 
       .trippy {
-        width: 300px;
+        width: 200px;
         position: absolute;
-        right: 10px;
         top: 80px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-left: 460px;
+        transition: opacity 1s;
       }
 
       .heatmap-container {
@@ -44,7 +51,7 @@
       }
 
       .gone {
-        display: none;
+        display: none !important;
       }
 
       .button {
@@ -81,22 +88,20 @@
   <body>
 
     <div class="test">
-      <p class="content">
-Solsystemet är det vardagliga namnet på vårt planetsystem där bland annat solen, jorden och månen ingår. Det består av solen och de himlakroppar som den binder till sig genom sin gravitation och har sitt ursprung i en gravitationell kollaps av ett gigantiskt gas- och stoftmoln för 4,5 miljarder år sedan.
+      <p class="content planet">
+Merkurius, Venus, jorden, Mars, Jupiter, Saturnus, Uranus, Neptunus och ...George? Forskare har i dagarna fått starka bevis som pekar på en nionde planet i vårt solsystem.
 
-Runt solen kretsar en rad objekt i en nästan rund skiva i ekliptikan. Med undantag från solen finns merparten av solsystemets massa i de åtta planeterna, vars omloppsbanor är nästan cirkulära. De fyra mindre inre planeterna är Merkurius, Venus, jorden och Mars, vilka kallas stenplaneterna och som mest består av sten och metall. De fyra yttre planeterna är Jupiter, Saturnus, Uranus och Neptunus som kallas gasjättarna och som mestadels består av väte och helium och är mycket tyngre och större än stenplaneterna.
+Den hypotetiska planeten ligger i det yttre solsystemet, långt utanför Plutos omloppsbana (kom ihåg att Pluto inte längre räknas som en planet, utan som en dvärgplanet). Den går oftast under namnet Planet Nine, men kallas bland astronomer även "Fatty" eller "George".
 
-Det finns två områden med mindre kroppar: asteroidbältet, som ligger mellan Mars och Jupiter, består av mindre kroppar som har vissa likheter med stenplaneterna då de till största delen består av sten och metall; Kuiperbältet, som ligger bortom Neptunus omloppsbana, består huvudsakligen av fruset vatten, ammoniak och metan. Inom dessa bälten finns det fem speciella objekt: Ceres, Pluto, Haumea, Makemake och Eris som betecknas dvärgplaneter, då de anses vara tillräckligt stora för ha blivit runda som en konsekvens av sin egen gravitation. På ett avstånd av 0,8–1,6 ljusår från solen antar man att det finns vad man kallar Oorts kometmoln som tros vara ursprunget till de långperiodiska kometerna.
+Planet Nine beräknas - om den existerar - ha en diameter som är 2-4 gånger större än jordens och en massa på ungefär 10 gånger jordens. Den tros vara en gasjätte, och då med liknande komposition som Uranus och Neptunus. Det som pekar på dess existens är att omloppsbanorna hos flera transneptunska objekt (dvärgplaneten Sedna och andra små himlakroppar utanför Neptunus omloppsbana) tycks påverkas av något stort därute.
 
-I solsystemet finns det grupper av mindre kroppar såsom kometer, centaurer och damokloider, interplanetärt stoft som färdas mellan dessa områden, medan solvinden, ett flöde av plasma från solen, skapar en bubbla i det interplanetära mediet som kallas heliosfären. Detta sträcker sig ut till mitten av det område som kallas scattered disc, ett område i anslutning till Kuiperbältet.
-
-Sex av planeterna och fyra av dvärgplaneterna har naturliga satelliter eller månar i omloppsbana. Var och en av de fyra yttre planeterna har en planetarisk ring av damm och andra partiklar.
+Om Planet Nine finns bör den ha en elliptisk (oval) omloppsbana som tar den mellan 200 och 1 200 AU från solen. Som jämförelse befinner sig Pluto 30-49 AU från solen (1 AU, astronomisk enhet, är avståndet mellan jorden och solen). Astronomer har redan börjat leta efter Planet Nine med teleskop, men än så länge har man inte sett något. På grund av dess stora avstånd från solen kommer den vara väldigt ljussvag, men - fullt möjlig att se med de bästa teleskopen.
       </p>
 
       <img class="ad bowie" src="blocket_bil_reklam.gif">
       <img class="ad bowie" src="telia_samsung_reklam.gif">
       <img class="ad trippy" src="hygglo_reklam.gif">
-      <img class="ad trippy" src="prisjakt_reklam.png">
+      <img class="ad trippy" src="hallong_reklam.gif">
 
       <div id="stop" class="button">
         Stop
@@ -112,8 +117,6 @@ Sex av planeterna och fyra av dvärgplaneterna har naturliga satelliter eller m�
     <div class="before gone">
       <span id="start" class="button">Starta</span>
     </div>
-
-    <iframe id="utif_701363d8-5248-4f3a-8565-12e54e79ae18_ba38c48b-467a-4396-a4a8-37e5e02caf7a" name="utif_701363d8-5248-4f3a-8565-12e54e79ae18_ba38c48b-467a-4396-a4a8-37e5e02caf7a" height="600px" width="160px" tabindex="-1" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" style="border: 0px;"></iframe>
 
     <script src="scripts/main.js"></script>
   </body>
